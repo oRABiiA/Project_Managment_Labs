@@ -1,88 +1,81 @@
-public class SharedData {
+import java.util.ArrayList;
 
-	/**
-	 * A class which holds data for the threads
-	 * 
-	 * @author Rabea Lahham
-	 * @author Majd Salameh
-	 *
-	 */
-
-	private int[] array;
-	private boolean[] winArray;
+/** A class which holds data for the threads
+ * 
+ * @author Rabea Lahham
+ * @author Majd Salameh
+ *
+ */
+public class SharedData 
+{
+	private ArrayList<Integer> array;
+	private boolean [] winArray;
 	private boolean flag;
 	private final int b;
-
-	/**
-	 * Constructor
+	
+	/** Constructor
 	 * 
-	 * @param array           a list of integers
-	 * @param b               an integer value
+	 * @param array     a list of integers
+	 * @param b         an integer value
 	 * 
 	 */
-	public SharedData(int[] array, int b) {
-
+	public SharedData(ArrayList<Integer> array, int b) {
+		
 		this.array = array;
 		this.b = b;
 	}
 
-	/**
-	 * getter for winArray
+	/** getter for winArray
 	 * 
-	 * @return                returns winArray in the object
+	 * @return        returns winArray in the object
 	 * 
 	 */
-
-	public boolean[] getWinArray() {
+	public boolean[] getWinArray() 
+	{
 		return winArray;
 	}
 
-	/**
-	 * setter for winArray
+	/** setter for winArray
 	 * 
-	 * @param winArray         an array of boolean values
+	 * @param winArray        an array of boolean values
 	 * 
 	 */
-
-	public void setWinArray(boolean[] winArray) {
+	public void setWinArray(boolean [] winArray) 
+	{
 		this.winArray = winArray;
 	}
 
-	/**
-	 * getter for array variable
+	/** getter for array variable 
 	 * 
-	 * @return               returns array in the object
+	 * @return                 returns array in the object
 	 * 
 	 */
-
-	public int[] getArray() {
+	public ArrayList<Integer> getArray() 
+	{
 		return array;
 	}
 
-	/**
-	 * getter for B variable
+	/** getter for B variable
 	 * 
-	 * @return                returns B variable in the object
+	 * @return               returns B variable in the object
 	 * 
 	 */
-
-	public int getB() {
+	public int getB() 
+	{
 		return b;
 	}
 
-	/**
-	 * getter for flag variable
+	/** getter for flag variable 
 	 * 
-	 * @return                 returns the flag in the object
+	 * @return                    returns the flag in the object
 	 * 
 	 */
-
-	public boolean getFlag() {
+	public boolean getFlag() 
+	{
 		return flag;
 	}
 
-	/**
-	 * setter for flag
+	/** setter for flag 
 	 * 
 	 * @param flag               holds a boolean value
 	 * 
